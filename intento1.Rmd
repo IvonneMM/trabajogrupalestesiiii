@@ -1,0 +1,14 @@
+```{r}
+install.packages("htmltab")
+
+```
+
+
+```{r}
+library(htmltab)
+linkprac="https://stats.oecd.org/Index.aspx?DatasetCode=HEALTH_STAT"
+linkpath='//*[@id="tablecontainer"]'
+
+la = htmltab(doc = linkprac, which = linkpath)
+```
+
